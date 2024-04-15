@@ -15,7 +15,7 @@ export default function Home() {
 
   const upload_function = useCallback(async (event) => {
 
-    const token = await (await fetch('http://localhost:3000/api/google/oauth/get_token')).text()
+    const token = await (await fetch('https://shark-app-qyghd.ondigitalocean.app/api/google/oauth/get_token/api/google/oauth/get_token')).text()
     event.preventDefault();
     const fileInput = event.target;
     const selectedFiles = fileInput.files;
